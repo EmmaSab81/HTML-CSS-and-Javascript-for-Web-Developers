@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body {
+  color :white;
+  font-family: Brush Script MT;
+}
+
+h1 {
+  color: black;
+  text-align:center;
+}
+.row {
+  width:100%;
+}
+
+.menu-title{
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  top:60px;
+  margin: 15px; 
+}
+ .item {
+  position: relative;
+  top :0;
+  margin:15px;
+  padding:25px;
+  background-color: #007878;
+  border: 2px solid gray;
+ }
+
+ .item p {
+  margin-top: 20px;
+  font-size :130%;
+  text-align: center;
+ }
+
+ .item-tit{
+  position: absolute;
+  top:0;
+  right:0;
+  padding:8px 80px;
+  border-left: 2px solid gray;
+  border-bottom: 2px solid gray;
+ }
+
+ #tilte-1 {
+  background-color: orange;
+ }
+
+ #tilte-2 {
+  background-color: yellow;
+ }
+
+ #tilte-3 {
+  background-color: violet;
+ }
+ /*** DeskTop ***/
+ @media (min-width: 992px) {
+  .col-1, .col-2, .col-3 {
+    float: left;
+  }
+  .col-1 {
+    width:33.33%;
+  }
+  .col-2 {
+    width:50%;
+  }
+  .col-3 {
+    width:100%;
+  }
+  
+ }
+/*** Tablet ***/
+ @media (min-width: 768px) and (max-width: 991px){
+  .col-1, .col-tablet {
+    float:left;
+  }
+  .col-1 {
+    width:50%;
+  }
+  .col-tablet{
+    width:100%;
+  }
+ }
+
+ /***Mobile***/
+ @media (max-width: 767px){
+  .col-1 {
+    width:100%;
+    float: left;
+  }
+ }
